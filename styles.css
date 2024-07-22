@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 150px;
+    background-image: url('https://i.ibb.co/hK0hnbs/bg04.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.email-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #407cdc;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(7, 7, 7, 2.1);
+    overflow: hidden;
+}
+
+.email-header {
+    background-color: #e91a1a;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.email-header .logo {
+    max-width: 150px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop-down shadow added */
+}
+
+.email-body {
+    background: url("https://i.gifer.com/YOPS.gif");
+    background-color: #fff;
+    padding: none;
+    text-align: center;
+    margin: 0;
+}
+
+.email-body p {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 10px 0;
+    color: #407cdc;
+}
+
+.christmas-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.unsubscribe-policy {
+    font-weight: 250;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    background: url("https://i.ibb.co/hK0hnbs/bg04.jpg");
+    color: #738b6f;
+}
+
+.unsubscribe-policy a {
+    color: #fedc69;
+    text-decoration: none;
+}
+
+.social-media {
+    text-align: center;
+    padding: 20px;
+    background: url("https://i.ibb.co/hK0hnbs/bg04.jpg");
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #407cdc;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #e91a1a;
+}
+
+.divider {
+    border: 0;
+    height: 0.5px;
+    background: #ddd;
+    margin: 20px auto;
+    opacity: 0.2;
+    width: 90%; /* Adjusted to 50% width */
+}
+
+.email-footer {
+    background-color: #fedc69;
+    color: #131313;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.email-footer a {
+    color: #131313;
+    text-decoration: none;
+}

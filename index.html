@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Email Template</title>
+    <meta name="description" content="KTM EduTech wishes you a Merry Christmas!">
+    <meta name="author" content="KTM EduTech">
+    <meta property="og:title" content="Merry Christmas from KTM EduTech">
+    <meta property="og:description" content="KTM EduTech wishes you a Merry Christmas filled with love, joy, and all the things that make your heart sing.">
+    <meta property="og:image" content="https://i.ibb.co/z4QWGJZ/KTM-Edu-Tech-Logo.png">
+    <meta property="og:url" content="https://www.kydmasong.net/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merry Christmas from KTM EduTech">
+    <meta name="twitter:description" content="KTM EduTech wishes you a Merry Christmas filled with love, joy, and all the things that make your heart sing.">
+    <meta name="twitter:image" content="https://i.ibb.co/z4QWGJZ/KTM-Edu-Tech-Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://i.ibb.co/JvXkFbv/ktm-favicon.png" type="image/png" />
+</head>
+<body>
+    <div class="email-container">
+        <header class="email-header">
+            <img src="https://i.ibb.co/z4QWGJZ/KTM-Edu-Tech-Logo.png" alt="KTM Edu Tech Logo" class="logo">
+        </header>
+        <main class="email-body">
+            <img src="https://i.ibb.co/TtQQC56/christmas-top.png" alt="Christmas Top Image" class="christmas-image">
+            <p>Dear [Friend's Name],</p>
+            <p>Wishing you a Christmas filled with love, joy, and all the things that make your heart sing. May your holiday season be merry and bright!</p>
+            <p>Warmest wishes,</p>
+            <p>[Your Name]</p>
+            <img src="https://i.ibb.co/S6jVLPy/christmas-bot.png" alt="Christmas Bottom Image" class="christmas-image">
+        </main>
+        <section class="social-media">
+            <a href="https://github.com/KTM-EduTech" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kydmasong/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/kizumi_ktm" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@KTMasongTV" target="_blank"><i class="fab fa-youtube"></i></a>
+        </section>       
+        <section class="unsubscribe-policy">
+            <hr class="divider">
+            <p>If you wish to unsubscribe from our mailing list, please click <a href="[unsubscribe-link]" target="_blank">here</a>.</p>
+        </section>
+        <footer class="email-footer">
+            <p>&copy; 2024 <a href="https://www.kydmasong.net/" target="_blank">KTM EduTech</a>. All rights reserved. TIME: <span id="time"></span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            
+            document.getElementById('time').textContent = timeString;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+
+        // Initialize time immediately
+        updateTime();
+    </script>
+</body>
+</html>
